@@ -12,62 +12,62 @@
               <p><b>Hier konnen Sie lhre adress-Angaben einsehen und anpassen. </b></p>
               </header>
 
-          <form action="title" id="form1">
-              <fieldset>
-                  <legend>Personal Detail</legend>
-            <label for="title">title:</label>
-            <button type="button">MR</button>
-            <button type="button">MRS</button>
-            <button type="button">MISS</button>
+          <form action="/action_page.php" method="GET">
+            
+                  <legend><b>Personal Detail</b></legend><br>
+            <label for="title">Title</label>
+            <input type="text" placeholder="Mr, Mrs,Ms"><br>
+            <label for="surname">Surname</label>
+            <input type="text" placeholder="zaman"><br>
+            <label for="name">Name</label>
+            <input type="text" placeholder="bhutta"><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male" id="myRadio">M
+            <input type="radio" name="gender" value="female" id="myRadio">F
+            <br>
+            <label for="language">Language</label>
+            <input type="radio" name="language" value="english" id="myRadio">EN
+            <input type="radio" name="language" value="italian" id="myRadio">IT
+            <input type="radio" name="language" value="german" id="myRadio">DE
+
             <br><br>
-        <label for="fname">first name:</label>
-        <input type="text" id="Title" name="fname" form="form1"><br>
-        <label for="surname">surname</label>
-        <input type="text" id="Title" name="surname" form="form1"><br>
-        <label for="gender">gender</label>
-        <button type="button">M</button>
-        <button type="button">F</button><br>
-        <label for="language">language</label>
-        <button type="button">en</button><br>
-        </fieldset>
-    </form>
-    
+            <legend><b>Contact Detail</b></legend><br>
+            <label for="telephone">Telephone</label>
+            <input type="text" placeholder="1234567890"><br>
+            <label for="mobile">Mobile</label>
+            <input type="text" placeholder="optional"><br>
+            <label for="main">MainNumber</label>
+            <input type="text" placeholder="optional"><br>
+            <label for="mail 1">Mail 1</label>
+            <input type="text" placeholder="marham.ayat@gmail.com"><br>
+            <label for="mail 2">Mail 2</label>
+            <input type="text" placeholder="optional">
+            
+            <br><br>
+            <legend><b>Address Detail</b></legend><br>
+            <label for="company">Company</label>
+            <input type="text" placeholder="company name"><br>
+            <label for="additional">Additional</label>
+            <input type="text" placeholder="optional"><br>
+            <label for="homepage">Homepage</label>
+            <input type="text" placeholder="optional"><br>
+            <label for="address/home nr">Address/Home Nr</label>
+            <input type="text" placeholder="milan,33"><br>
+            <label for="addition">Additional Address</label>
+            <input type="text" placeholder="optional"><br>
+            <label for="post">P O Box</label>
+            <input type="" placeholder="optional"><br>
+            <label for="postcode/place">Postcode/Place</label>
+            <input type="text" placeholder="21042,Via"><br>
+            <label for="province/country">Province/Country</label>
+            <input type="text" placeholder="MI/Italy"><br>
 
+            <br><br><br>
+            <button type="save" value="save">Save</button>
 
-        <form action="/contactdetail" id="form2">
-            <fieldset>
-                <legend>Contact Detail</legend>
-                <label for="telephone">telephone:</label>
-                <input type="text" id="telephone" name="tel" form="form2"><br>
-                <label for="mobile">mobile</label>
-                <input type="text" id="mobile" name="mob" form="form2"><br>
-                <label for="fax">fax</label>
-                <input type="text" id="optional" name="mob" form="form2"><br>
-                <label for="mail1">mail1</label>
-                <input type="text" id="mail1" name="mail1" form="form2"><br>
-                <label for="mail2">mail2</label>
-                <input type="text" id="mail2" name="mail2" form="form2"><br>
-            </fieldset>
+        
         </form>
-        <form action="/adressdetail" id="form3">
-            <fieldset>
-                <legend>Address Detail</legend>
-                <label for="sign">company:</label>
-                <input type="text" id="company" name="com" form="form3"><br>
-                <label for="mobile">homepage</label>
-                <input type="text" id="homepage" name="homepage" form="form3"><br>
-                <label for="address">address</label>
-                <input type="text" id="optional" name="mob" form="form3"><br>
-                <label for="P.O.Box">P.O.Box</label>
-                <input type="text" id="P.O.BOX" name="pobox" form="form3"><br>
-                <label for="city">city</label>
-                <input type="text" id="city" name="city" form="form3"><br>
-                <label for="country">country</label>
-                <input type="text" id="country" name="country" form="form3"><br>
-            </fieldset>
-            <input type="button" onclick="myFunction()" value="Submit">
-        </form>
+    </body>
 
+        
 
-
-</body>
